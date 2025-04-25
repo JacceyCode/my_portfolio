@@ -1,4 +1,4 @@
-import { CounterItem, Words } from "../types/interface";
+import { CounterItem, LogoIcons, Words } from "../types/interface";
 
 const navLinks = [
   {
@@ -37,7 +37,7 @@ const counterItems: CounterItem[] = [
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
-const logoIconsList = [
+const logoIconsList: LogoIcons[] = [
   {
     imgPath: "/images/logos/company-logo-1.png",
   },

@@ -14,3 +14,7 @@ export interface CounterItem {
   suffix: string;
   label: string;
 }
+
+export interface LogoIcons {
+  imgPath: string;
+}
