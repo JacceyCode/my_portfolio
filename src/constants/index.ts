@@ -1,4 +1,10 @@
-import { Ability, CounterItem, LogoIcons, Words } from "../types/interface";
+import {
+  Ability,
+  CounterItem,
+  Experience,
+  LogoIcons,
+  Words,
+} from "../types/interface";
 
 const navLinks = [
   {
@@ -147,7 +153,7 @@ const techStackIcons = [
   },
 ];
 
-const expCards = [
+const expCards: Experience[] = [
   {
     review:
       "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",

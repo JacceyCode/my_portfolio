@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import Carousel from "./sections/Carousel";
+import Experience from "./sections/Experience";
 import FeatureCards from "./sections/FeatureCards";
 import Hero from "./sections/Hero";
 import Showcase from "./sections/Showcase";
@@ -12,6 +13,7 @@ function App() {
       <Showcase />
       <Carousel />
       <FeatureCards />
+      <Experience />
     </main>
   );
 }
