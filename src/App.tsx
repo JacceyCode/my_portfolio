@@ -1,9 +1,9 @@
+import Hero from "./sections/Hero";
+
 function App() {
   return (
     <main>
-      <header>
-        <h1 className="text-3xl underline">My Portfolio</h1>
-      </header>
+      <Hero />
     </main>
   );
 }
