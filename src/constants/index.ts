@@ -1,4 +1,4 @@
-import { CounterItem, LogoIcons, Words } from "../types/interface";
+import { Ability, CounterItem, LogoIcons, Words } from "../types/interface";
 
 const navLinks = [
   {
@@ -73,7 +73,7 @@ const logoIconsList: LogoIcons[] = [
   },
 ];
 
-const abilities = [
+const abilities: Ability[] = [
   {
     imgPath: "/images/seo.png",
     title: "Quality Focus",
