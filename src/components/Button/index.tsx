@@ -3,7 +3,7 @@ import { ButtonProp } from "../../types/interface";
 const Button = ({ className, text, id }: ButtonProp) => {
   return (
     <a
-      href={id}
+      href={`#${id}`}
       className={`${className ?? ""} cta-wrapper`}
       data-testid="cta-btn"
     >

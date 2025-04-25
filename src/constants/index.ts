@@ -1,4 +1,4 @@
-import { Words } from "../types/interface";
+import { CounterItem, Words } from "../types/interface";
 
 const navLinks = [
   {
@@ -30,10 +30,10 @@ const words: Words[] = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
-const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+const counterItems: CounterItem[] = [
+  { value: 4, suffix: "+", label: "Years of Experience" },
+  { value: 40, suffix: "+", label: "Satisfied Clients" },
+  { value: 78, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
