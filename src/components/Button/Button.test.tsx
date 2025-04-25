@@ -5,7 +5,7 @@ describe("Button component", () => {
   const defaultProps = {
     className: "custom-class",
     text: "Click Me",
-    id: "#section1",
+    id: "section1",
   };
 
   beforeEach(() => {
