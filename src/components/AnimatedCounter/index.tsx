@@ -8,7 +8,7 @@ const AnimatedCounter = () => {
       data-testid="counter"
       className="padding-x-lg mt-32 xl:mt-0"
     >
-      <div className="mx-auto grid-4-cols">
+      <div className="mx-auto grid-4-cols sm:grid-cols-2 xl:grid-cols-4 !gap-3 md:!gap-7">
         {counterItems.map((item) => (
           <div
             key={item.label}
