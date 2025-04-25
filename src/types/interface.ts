@@ -18,3 +18,9 @@ export interface CounterItem {
 export interface LogoIcons {
   imgPath: string;
 }
+
+export interface Ability {
+  imgPath: string;
+  title: string;
+  desc: string;
+}
