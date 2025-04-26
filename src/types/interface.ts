@@ -41,3 +41,19 @@ export interface GlowCardProps {
   card: Experience;
   index: number;
 }
+
+export interface TechIcons {
+  name: string;
+  modelPath: string;
+  scale: number;
+  rotation: [number, number, number];
+}
+
+export interface TechImages {
+  name: string;
+  imgPath: string;
+}
+
+export interface TechIconProps {
+  model: TechIcons;
+}
