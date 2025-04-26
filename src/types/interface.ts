@@ -64,3 +64,15 @@ export interface Testimonial {
   review: string;
   imgPath: string;
 }
+
+export interface FormState {
+  name: string;
+  email: string;
+  message: string;
+}
+
+export interface Social {
+  name: string;
+  imgPath: string;
+  url: string;
+}

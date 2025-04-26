@@ -3,6 +3,7 @@ import {
   CounterItem,
   Experience,
   LogoIcons,
+  Social,
   TechIcons,
   TechImages,
   Testimonial,
@@ -258,22 +259,26 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
+const socialImgs: Social[] = [
+  // {
+  //   name: "insta",
+  //   imgPath: "/images/insta.png",
+  //   url: "wwww.x.com",
+  // },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    url: "wwww.x.com",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "wwww.x.com",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "wwww.x.com",
   },
 ];
 
