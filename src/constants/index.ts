@@ -3,6 +3,8 @@ import {
   CounterItem,
   Experience,
   LogoIcons,
+  TechIcons,
+  TechImages,
   Words,
 } from "../types/interface";
 
@@ -97,7 +99,7 @@ const abilities: Ability[] = [
   },
 ];
 
-const techStackImgs = [
+const techStackImgs: TechImages[] = [
   {
     name: "React Developer",
     imgPath: "/images/logos/react.png",
@@ -120,7 +122,7 @@ const techStackImgs = [
   },
 ];
 
-const techStackIcons = [
+const techStackIcons: TechIcons[] = [
   {
     name: "React Developer",
     modelPath: "/models/react_logo-transformed.glb",
