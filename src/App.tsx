@@ -5,6 +5,7 @@ import FeatureCards from "./sections/FeatureCards";
 import Hero from "./sections/Hero";
 import Showcase from "./sections/Showcase";
 import TechStack from "./sections/TechStack";
+import Testimonials from "./sections/Testimonials";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <FeatureCards />
       <Experience />
       <TechStack />
+      <Testimonials />
     </main>
   );
 }

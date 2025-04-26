@@ -38,7 +38,7 @@ export interface Experience {
 
 export interface GlowCardProps {
   children: ReactNode;
-  card: Experience;
+  card: Experience | { review: string };
   index: number;
 }
 
@@ -56,4 +56,11 @@ export interface TechImages {
 
 export interface TechIconProps {
   model: TechIcons;
+}
+
+export interface Testimonial {
+  name: string;
+  mentions: string;
+  review: string;
+  imgPath: string;
 }
