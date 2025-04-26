@@ -5,6 +5,7 @@ import {
   LogoIcons,
   TechIcons,
   TechImages,
+  Testimonial,
   Words,
 } from "../types/interface";
 
@@ -212,7 +213,7 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
+const testimonials: Testimonial[] = [
   {
     name: "Esther Howard",
     mentions: "@estherhoward",
