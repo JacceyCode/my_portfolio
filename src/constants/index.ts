@@ -1,9 +1,11 @@
+import { BiLogoWhatsapp } from "react-icons/bi";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import {
   Ability,
   CounterItem,
   Experience,
   LogoIcons,
-  Social,
+  SocialContact,
   TechIcons,
   TechImages,
   Testimonial,
@@ -13,19 +15,19 @@ import {
 const navLinks = [
   {
     name: "Work",
-    link: "#work",
+    link: "work",
   },
   {
     name: "Experience",
-    link: "#experience",
+    link: "experience",
   },
   {
     name: "Skills",
-    link: "#skills",
+    link: "skills",
   },
   {
     name: "Testimonials",
-    link: "#testimonials",
+    link: "testimonials",
   },
 ];
 
@@ -259,39 +261,47 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const socialImgs: Social[] = [
-  // {
-  //   name: "insta",
-  //   imgPath: "/images/insta.png",
-  //   url: "wwww.x.com",
-  // },
+const socialContact: SocialContact[] = [
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-    url: "wwww.x.com",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-    url: "wwww.x.com",
+    name: "github",
+    url: "https://github.com/JacceyCode",
+    iconName: FaGithub,
+    iconColor: "white",
+    animation: "animate-bounce",
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
-    url: "wwww.x.com",
+    url: "https://www.linkedin.com/in/jacob-oluwasesan-adebayo/",
+    iconName: FaLinkedin,
+    iconColor: "#0077B5",
+    animation: "animate-[bounce_2s_infinite]",
+  },
+  {
+    name: "twitter",
+    url: "https://twitter.com/code_sesan",
+    iconName: FaXTwitter,
+    iconColor: "white",
+    animation: "animate-bounce",
+  },
+  {
+    name: "whatsapp",
+    url: "https://wa.me/2348134557536",
+    iconName: BiLogoWhatsapp,
+    iconColor: "#075E54",
+    animation: "animate-[bounce_2s_infinite]",
   },
 ];
 
 export {
-  words,
   abilities,
-  logoIconsList,
   counterItems,
   expCards,
   expLogos,
-  testimonials,
-  socialImgs,
+  logoIconsList,
+  navLinks,
+  socialContact,
   techStackIcons,
   techStackImgs,
-  navLinks,
+  testimonials,
+  words,
 };

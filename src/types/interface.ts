@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { IconType } from "react-icons";
 
 export interface Words {
   text: string;
@@ -71,8 +72,10 @@ export interface FormState {
   message: string;
 }
 
-export interface Social {
+export interface SocialContact {
   name: string;
-  imgPath: string;
   url: string;
+  iconName: IconType;
+  iconColor: string;
+  animation: string;
 }

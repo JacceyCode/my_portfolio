@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../../constants";
+import { handleSectionScroll } from "./../../../utils/index";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -18,7 +19,11 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a className="logo flex items-center gap-2" href="#hero">
+        <a
+          className="logo flex items-center gap-2"
+          href="#hero"
+          onClick={(e) => handleSectionScroll(e, "hero")}
+        >
           <img
             src="/images/logo.png"
             alt="Jacob's Logo"
@@ -33,7 +38,10 @@ const NavBar = () => {
           <ul>
             {navLinks.map((link) => (
               <li key={link.name} className="group">
-                <a href={link.link}>
+                <a
+                  href={link.link}
+                  onClick={(e) => handleSectionScroll(e, link.link)}
+                >
                   <span>{link.name}</span>
                   <span className="underline" />
                 </a>
@@ -42,11 +50,26 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <div className="flex flex-col md:flex-row items-end md:items-center gap-3">
+          <a
+            href="https://drive.google.com/file/d/1LMdj_fEhIw-LlWvKZyDRBqHAX5dSOnfu/view?usp=sharing"
+            target="_blank"
+            className="contact-btn group"
+          >
+            <div className="resume">
+              <span>Resume</span>
+            </div>
+          </a>
+          <a
+            href="#contact"
+            className="contact-btn group"
+            onClick={(e) => handleSectionScroll(e, "contact")}
+          >
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+        </div>
       </div>
     </header>
   );
