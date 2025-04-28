@@ -162,24 +162,25 @@ const techStackIcons: TechIcons[] = [
 const expCards: Experience[] = [
   {
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+      "Jacob's expertise is evident in his consistent delivery of high-quality solutions that improve performance, security, and user engagement. His dedication to clean architecture, agile methodologies, and continuous improvement is evident in every project he undertakes.",
+    imgPath: "/images/traderappimg.png",
+    logoPath: "/images/traderapp.png",
+    title: "Full Stack Engineer",
+    date: "March 2024 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developed a real-time asset price streaming feature for the user dashboard using Web Sockets, Redis and the Binance API, improving trade execution and monitoring speed.",
+      "Designed a trade signals tracking system to accurately calculate and reward users for earned profits, increasing transaction accuracy by 41%.",
+      "Boosted new registrations by 33% and increased active users by 74% by implementing a gamified task and reward system.",
+      "Implemented automated unit testing with Jest, reducing deployment bugs by 55% and improving system reliability.",
     ],
   },
   {
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+      "Jacob combines deep frontend experience with robust backend API design skills. His passion for crafting secure, efficient, and user-focused products stands out in both web and mobile projects.",
+    imgPath: "/images/eumlaimg.png",
+    logoPath: "/images/eumla.png",
     title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    date: "January 2024 - October 2024",
     responsibilities: [
       "Led the development of Docker's web applications, focusing on scalability.",
       "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
@@ -188,15 +189,16 @@ const expCards: Experience[] = [
   },
   {
     review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+      "Jacob brings a unique blend of technical excellence and real-world impact to his work. His collaborative spirit, problem-solving ability, and commitment to innovation set him apart as a well-grounded software developer.",
+    imgPath: "/images/qiminvestimg.png",
+    logoPath: "/images/qiminvest.png",
+    title: "Software Developer",
+    date: "June 2022 - March 2024",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Increased revenue by 7% and traffic by 24% by deploying a new website optimized with search engine optimization (SEO) strategies and meta-tagging.",
+      "Enhanced API performance by 20% by optimizing query efficiency and database structuring in Node.js/Express.",
+      "Strengthened security by implementing JWT-based authentication and cookie-based access control, reducing unauthorized access incidents.",
+      "Reduced system failures by 35% with automated unit testing with Jest, ensuring data integrity.",
     ],
   },
 ];
