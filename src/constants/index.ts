@@ -12,48 +12,48 @@ import {
 } from "../types/interface";
 
 ///////////////////////////////
-import careplus from "/images/care-plus.png";
-import bank from "/images/bank.png";
+// import careplus from "/images/care-plus.png";
+// import bank from "/images/bank.png";
 // import seron from "/images/seron.png";
 // import oasisclt from "/images/oasis-client.jpeg";
 // import blog from "/images/blog.webp";
-import dmarketplace from "/images/dmarketplace.webp";
-import natours from "/images/natours.webp";
+// import dmarketplace from "/images/dmarketplace.webp";
+// import natours from "/images/natours.webp";
 // import oasismgt from "/images/oasis-mgt.jpeg";
-import moviebox from "/images/moviebox.webp";
+// import moviebox from "/images/moviebox.webp";
 // import pizza from "/images/pizza.webp";
-import apple from "/images/apple.png";
+// import apple from "/images/apple.png";
 // import jafel from "/images/jafel.png";
 
 ////////////////////////////////
-import html from "/images/logos/html.png";
-import css from "/images/logos/css.png";
-import javascript from "/images/logos/javascript.png";
-import typescript from "/images/logos/typescript.png";
-import sass from "/images/logos/sass.png";
-import redux from "/images/logos/redux.png";
-import nextjs from "/images/logos/nextjs.png";
-import figma from "/images/logos/figma.png";
-import jest from "/images/logos/jest.png";
-import aws from "/images/logos/aws.png";
-import docker from "/images/logos/docker.png";
-import appwrite from "/images/logos/appwrite.png";
-import redis from "/images/logos/redis.png";
-import tailwind from "/images/logos/tailwind.png";
-import gitactions from "/images/logos/actions.png";
-import vscode from "/images/logos/vscode.png";
-import vercel from "/images/logos/vercel.jpeg";
-import threejs from "/images/logos/three.png";
-import shell from "/images/logos/shell.png";
-import postgresql from "/images/logos/postgres.png";
-import mysql from "/images/logos/mysql.png";
-import jira from "/images/logos/jira.png";
-import zustand from "/images/logos/zustand.png";
-import gsap from "/images/logos/gsap.png";
-import supabase from "/images/logos/supabase.png";
-import java from "/images/logos/java.png";
-import spring from "/images/logos/spring.png";
-import junit from "/images/logos/junit.png";
+// import html from "/images/logos/html.png";
+// import css from "/images/logos/css.png";
+// import javascript from "/images/logos/javascript.png";
+// import typescript from "/images/logos/typescript.png";
+// import sass from "/images/logos/sass.png";
+// import redux from "/images/logos/redux.png";
+// import nextjs from "/images/logos/nextjs.png";
+// import figma from "/images/logos/figma.png";
+// import jest from "/images/logos/jest.png";
+// import aws from "/images/logos/aws.png";
+// import docker from "/images/logos/docker.png";
+// import appwrite from "/images/logos/appwrite.png";
+// import redis from "/images/logos/redis.png";
+// import tailwind from "/images/logos/tailwind.png";
+// import gitactions from "/images/logos/actions.png";
+// import vscode from "/images/logos/vscode.png";
+// import vercel from "/images/logos/vercel.jpeg";
+// import threejs from "/images/logos/three.png";
+// import shell from "/images/logos/shell.png";
+// import postgresql from "/images/logos/postgres.png";
+// import mysql from "/images/logos/mysql.png";
+// import jira from "/images/logos/jira.png";
+// import zustand from "/images/logos/zustand.png";
+// import gsap from "/images/logos/gsap.png";
+// import supabase from "/images/logos/supabase.png";
+// import java from "/images/logos/java.png";
+// import spring from "/images/logos/spring.png";
+// import junit from "/images/logos/junit.png";
 
 const navLinks = [
   {
@@ -142,116 +142,115 @@ const skills: TechStack[] = [
 const technologies: LogoIcons[] = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: "/images/logos/html.png",
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: "/images/logos/css.png",
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: "/images/logos/javascript.png",
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: "/images/logos/typescript.png",
   },
   {
     name: "Next.jS",
-    icon: nextjs,
+    icon: "/images/logos/nextjs.png",
   },
   {
     name: "Jest",
-    icon: jest,
+    icon: "/images/logos/jest.png",
   },
   {
     name: "Redux(RTK)",
-    icon: redux,
+    icon: "/images/logos/redux.png",
   },
   {
     name: "Zustand",
-    icon: zustand,
+    icon: "/images/logos/zustand.png",
   },
   {
     name: "Sass",
-    icon: sass,
+    icon: "/images/logos/sass.png",
   },
   {
     name: "TailwindCSS",
-    icon: tailwind,
+    icon: "/images/logos/tailwind.png",
   },
-
   {
     name: "MySQL",
-    icon: mysql,
+    icon: "/images/logos/mysql.png",
   },
   {
     name: "PostgreSQL",
-    icon: postgresql,
+    icon: "/images/logos/postgres.png",
   },
   {
     name: "Supabase",
-    icon: supabase,
+    icon: "/images/logos/supabase.png",
   },
   {
     name: "Appwrite",
-    icon: appwrite,
+    icon: "/images/logos/appwrite.png",
   },
   {
     name: "Redis",
-    icon: redis,
+    icon: "/images/logos/redis.png",
   },
   {
     name: "Bash_Script",
-    icon: shell,
+    icon: "/images/logos/shell.png",
   },
   {
     name: "GitHub Actions",
-    icon: gitactions,
+    icon: "/images/logos/actions.png",
   },
   {
     name: "Docker",
-    icon: docker,
+    icon: "/images/logos/docker.png",
   },
   {
     name: "Vercel",
-    icon: vercel,
+    icon: "/images/logos/vercel.jpeg",
   },
   {
     name: "AWS",
-    icon: aws,
+    icon: "/images/logos/aws.png",
   },
   {
     name: "Java",
-    icon: java,
+    icon: "/images/logos/java.png",
   },
   {
     name: "SpringBoot",
-    icon: spring,
+    icon: "/images/logos/spring.png",
   },
   {
     name: "JUnit-5",
-    icon: junit,
+    icon: "/images/logos/junit.png",
   },
   {
     name: "GSAP",
-    icon: gsap,
+    icon: "/images/logos/gsap.png",
   },
   {
     name: "Three.js",
-    icon: threejs,
+    icon: "/images/logos/three.png",
   },
   {
     name: "VSCode",
-    icon: vscode,
+    icon: "/images/logos/vscode.png",
   },
   {
     name: "Jira",
-    icon: jira,
+    icon: "/images/logos/jira.png",
   },
   {
     name: "Figma",
-    icon: figma,
+    icon: "/images/logos/figma.png",
   },
 ];
 
@@ -464,7 +463,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: careplus,
+    image: "/images/care-plus.png",
     source_code_link: "https://github.com/JacceyCode/careplus",
     live_demo: "https://care-plus-pi.vercel.app",
   },
@@ -510,7 +509,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: bank,
+    image: "/images/bank.png",
     source_code_link: "https://github.com/JacceyCode/finance",
     live_demo: "https://bank-on-the-go.vercel.app",
   },
@@ -540,7 +539,7 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: apple,
+    image: "/images/apple.png",
     source_code_link: "https://github.com/JacceyCode/apple",
     live_demo: "https://apple-motion-page.vercel.app",
   },
@@ -689,7 +688,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: dmarketplace,
+    image: "/images/dmarketplace.webp",
     source_code_link: "https://github.com/JacceyCode/themarketplace",
     live_demo: "https://dmarketplace.netlify.app",
   },
@@ -723,7 +722,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: natours,
+    image: "/images/natours.webp",
     source_code_link: "https://github.com/JacceyCode/Natours",
     live_demo: "https://mynatours-3ltq.onrender.com",
   },
@@ -771,7 +770,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: moviebox,
+    image: "/images/moviebox.webp",
     source_code_link: "https://github.com/JacceyCode/HNGxStage2Task",
     live_demo: "https://mymoviestreambox.netlify.app",
   },
