@@ -1,3 +1,4 @@
+import { handleSectionScroll } from "../../../utils";
 import { ButtonProp } from "../../types/interface";
 
 const Button = ({ className, text, id }: ButtonProp) => {
@@ -6,6 +7,7 @@ const Button = ({ className, text, id }: ButtonProp) => {
       href={`#${id}`}
       className={`${className ?? ""} cta-wrapper`}
       data-testid="cta-btn"
+      onClick={(e) => handleSectionScroll(e, id)}
     >
       <div className="cta-button group">
         <div className="bg-circle" />

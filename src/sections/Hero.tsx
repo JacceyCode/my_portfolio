@@ -1,9 +1,9 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import HeroExperince from "../components/HeroModels/HeroExperince";
-import { words } from "../constants";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { socialContact, words } from "../constants";
 
 const Hero = () => {
   useGSAP(() => {
@@ -66,6 +66,19 @@ const Hero = () => {
               as my toolkit but solving problem is my real{" "}
               <b className="text-amber-400">superpower</b> 💪.
             </p>
+
+            <div className="flex items-center space-x-6 my-1 md:my-5 z-10">
+              {socialContact.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  className={`bg-black-100 border border-black-50 p-2 rounded-xl hover:bg-black-50 ${social.animation}`}
+                >
+                  <social.iconName size={26} color={social.iconColor} />
+                </a>
+              ))}
+            </div>
 
             <Button
               className="md:w-80 md:h-16 w-60 h-12"

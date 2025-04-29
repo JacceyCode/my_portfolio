@@ -7,7 +7,7 @@ import FeatureCards from "./sections/FeatureCards";
 import Hero from "./sections/Hero";
 import Showcase from "./sections/Showcase";
 import TechStack from "./sections/TechStack";
-import Testimonials from "./sections/Testimonials";
+// import Testimonials from "./sections/Testimonials";
 import Footer from "./sections/Footer";
 
 function App() {
@@ -15,12 +15,12 @@ function App() {
     <main>
       <NavBar />
       <Hero />
-      <Showcase />
-      <Carousel />
       <FeatureCards />
-      <Experience />
+      <Showcase />
       <TechStack />
-      <Testimonials />
+      <Carousel />
+      <Experience />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
       <ToastContainer

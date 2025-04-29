@@ -61,14 +61,14 @@ const Contact = () => {
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get In Touch With me"
+          title="Get In Touch With Me"
           sub="📧 Contact Information"
         />
 
         <div className="mt-16 grid-12-cols">
           {/* LEFT SIDE */}
           <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl p-4 md:p-10">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}

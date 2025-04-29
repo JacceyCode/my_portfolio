@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { IconType } from "react-icons";
 
 export interface Words {
   text: string;
@@ -18,7 +19,8 @@ export interface CounterItem {
 }
 
 export interface LogoIcons {
-  imgPath: string;
+  name: string;
+  icon: string;
 }
 
 export interface Ability {
@@ -49,9 +51,12 @@ export interface TechIcons {
   rotation: [number, number, number];
 }
 
-export interface TechImages {
+export interface TechStack {
   name: string;
-  imgPath: string;
+  imgPath?: string;
+  modelPath?: string;
+  scale?: number;
+  rotation?: [number, number, number];
 }
 
 export interface TechIconProps {
@@ -71,8 +76,10 @@ export interface FormState {
   message: string;
 }
 
-export interface Social {
+export interface SocialContact {
   name: string;
-  imgPath: string;
   url: string;
+  iconName: IconType;
+  iconColor: string;
+  animation: string;
 }

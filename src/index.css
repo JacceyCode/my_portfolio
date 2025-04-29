@@ -8,6 +8,8 @@
 html,
 body {
   width: 100dvw;
+  max-width: 1440px;
+  margin-inline: auto;
   overflow-x: hidden;
   background-color: black;
   color: white;
@@ -16,7 +18,7 @@ body {
 }
 
 section {
-  width: 100dvw;
+  width: 100%;
 }
 
 @theme {
@@ -103,7 +105,7 @@ section {
   }
 
   .navbar {
-    @apply fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
+    @apply fixed max-w-[1440px] w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
 
     &.scrolled {
       @apply top-0 bg-black;
@@ -144,8 +146,16 @@ section {
     .contact-btn {
       @apply flex;
 
+      .resume {
+        @apply text-white group-hover:underline transition-colors duration-300;
+
+        span {
+          @apply group-hover:text-white transition-colors duration-300;
+        }
+      }
+
       .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+        @apply px-3 py-[2px] md:px-5 md:py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
 
         span {
           @apply group-hover:text-white transition-colors duration-300;
@@ -168,7 +178,7 @@ section {
         @apply lg:h-[70vh] md:h-[50vh] h-96 relative;
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full object-fill rounded-xl absolute inset-0;
         }
       }
 
@@ -189,7 +199,7 @@ section {
       @apply flex md:flex-row flex-col lg:flex-col gap-10 lg:w-[40%];
 
       .image-wrapper {
-        @apply xl:h-[37vh] md:h-52 lg:h-60 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
+        @apply xl:h-[32vh] md:h-52 lg:h-60 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
       }
 
       img {
@@ -210,8 +220,8 @@ section {
     @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
-      @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
-        w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
+      @apply absolute -right-4 md:-right-10 origin-center top-1/2 -translate-y-1/2 
+        w-[120%] h-[120%] group-hover:size-10 group-hover:right-4 md:group-hover:right-10
         rounded-full bg-white-50 transition-all duration-500;
     }
 
@@ -221,7 +231,7 @@ section {
     }
 
     .arrow-wrapper {
-      @apply group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 
+      @apply group-hover:bg-white-50 size-10 rounded-full absolute right-4 md:right-10 top-1/2 
         -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
       img {
@@ -239,7 +249,7 @@ section {
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
+    @apply absolute top-0 2xl:left-[40.5%] xl:left-[41.5%] lg:left-[38vw] md:left-10 left-5 h-full flex justify-center;
   }
 
   .timeline {
@@ -263,7 +273,7 @@ section {
   }
 
   .tech-card-content {
-    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
+    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[45vh] overflow-hidden relative z-10 group-hover:cursor-grab;
 
     & p {
       @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center;
@@ -301,7 +311,7 @@ section {
     @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
     .footer-container {
-      @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+      @apply grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 w-full;
     }
 
     p {
@@ -309,7 +319,7 @@ section {
     }
 
     .socials {
-      @apply flex items-center justify-center gap-5;
+      @apply flex items-center justify-center md:justify-start gap-5;
 
       .icon {
         @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
@@ -319,6 +329,21 @@ section {
         @apply inline-block;
       }
     }
+  }
+
+  /* ///////////////////////////////// */
+  .black-gradient {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #d9ecff,
+      #282732
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #d9ecff,
+      #282732
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
@@ -363,16 +388,15 @@ section {
 }
 
 /* Hero Text slider ends */
-
 .gradient-line {
   width: 2px;
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
+    #0c8b02 25%,
+    #ffa500 37.51%,
+    #f7f9fc 62.83%,
+    #1836b2 92.91%
   );
 }
 
@@ -396,18 +420,18 @@ section {
 
 /* marquee */
 .marquee {
-  width: 100dvw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
 .marquee-box {
   display: flex;
   align-items: center;
-  width: 200%;
+  width: 600%;
   height: 100%;
   position: absolute;
   overflow: hidden;
-  animation: marquee 60s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 .marquee-item {
   float: left;
@@ -417,7 +441,7 @@ section {
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -400%;
   }
 }
 /* marquee end */
