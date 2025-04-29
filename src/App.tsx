@@ -7,7 +7,7 @@ import FeatureCards from "./sections/FeatureCards";
 import Hero from "./sections/Hero";
 import Showcase from "./sections/Showcase";
 import TechStack from "./sections/TechStack";
-import Testimonials from "./sections/Testimonials";
+// import Testimonials from "./sections/Testimonials";
 import Footer from "./sections/Footer";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <TechStack />
       <Carousel />
       <Experience />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
       <ToastContainer
