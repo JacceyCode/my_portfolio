@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import TechIcon from "../components/Models/TeckLogos/TechIcon";
 import TitleHeader from "../components/TitleHeader";
-import { techStackIcons } from "../constants";
+import { skills } from "../constants";
 
 const TechStack = () => {
   useGSAP(() => {
@@ -32,10 +32,39 @@ const TechStack = () => {
         />
 
         <div className="tech-grid">
-          {techStackIcons.map((icon) => (
+          {skills.map((skill) => (
+            <div
+              key={skill.name}
+              className="card-border tech-card overflow-hidden group xl:rounded-3xl rounded-lg"
+            >
+              <div className="tech-card-animated-bg" />
+              <div className="tech-card-content">
+                <div className="tech-icon-wrapper">
+                  {skill.imgPath ? (
+                    <img src={skill.imgPath} alt={skill.name} />
+                  ) : (
+                    <TechIcon
+                      model={{
+                        ...skill,
+                        modelPath: skill.modelPath || "",
+                        scale: skill.scale || 1,
+                        rotation: skill.rotation || [0, 0, 0],
+                      }}
+                    />
+                  )}
+                </div>
+
+                <div className="padding-x w-full">
+                  <p>{skill.name}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {/* {techStackIcons.map((icon) => (
             <div
               key={icon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              className="card-border tech-card overflow-hidden group xl:rounded-3xl rounded-lg"
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
@@ -43,23 +72,6 @@ const TechStack = () => {
                   <TechIcon model={icon} />
                 </div>
 
-                <div className="padding-x w-full">
-                  <p>{icon.name}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-
-          {/* {techStackImgs.map((icon) => (
-            <div
-              key={icon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img src={icon.imgPath} alt={icon.name} />
-                </div>
                 <div className="padding-x w-full">
                   <p>{icon.name}</p>
                 </div>

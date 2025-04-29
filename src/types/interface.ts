@@ -19,7 +19,8 @@ export interface CounterItem {
 }
 
 export interface LogoIcons {
-  imgPath: string;
+  name: string;
+  icon: string;
 }
 
 export interface Ability {
@@ -50,9 +51,12 @@ export interface TechIcons {
   rotation: [number, number, number];
 }
 
-export interface TechImages {
+export interface TechStack {
   name: string;
-  imgPath: string;
+  imgPath?: string;
+  modelPath?: string;
+  scale?: number;
+  rotation?: [number, number, number];
 }
 
 export interface TechIconProps {

@@ -6,11 +6,54 @@ import {
   Experience,
   LogoIcons,
   SocialContact,
-  TechIcons,
-  TechImages,
+  TechStack,
   Testimonial,
   Words,
 } from "../types/interface";
+
+///////////////////////////////
+import careplus from "/images/care-plus.png";
+import bank from "/images/bank.png";
+// import seron from "/images/seron.png";
+// import oasisclt from "/images/oasis-client.jpeg";
+// import blog from "/images/blog.webp";
+import dmarketplace from "/images/dmarketplace.webp";
+import natours from "/images/natours.webp";
+// import oasismgt from "/images/oasis-mgt.jpeg";
+import moviebox from "/images/moviebox.webp";
+// import pizza from "/images/pizza.webp";
+import apple from "/images/apple.png";
+// import jafel from "/images/jafel.png";
+
+////////////////////////////////
+import html from "/images/logos/html.png";
+import css from "/images/logos/css.png";
+import javascript from "/images/logos/javascript.png";
+import typescript from "/images/logos/typescript.png";
+import sass from "/images/logos/sass.png";
+import redux from "/images/logos/redux.png";
+import nextjs from "/images/logos/nextjs.png";
+import figma from "/images/logos/figma.png";
+import jest from "/images/logos/jest.png";
+import aws from "/images/logos/aws.png";
+import docker from "/images/logos/docker.png";
+import appwrite from "/images/logos/appwrite.png";
+import redis from "/images/logos/redis.png";
+import tailwind from "/images/logos/tailwind.png";
+import gitactions from "/images/logos/actions.png";
+import vscode from "/images/logos/vscode.png";
+import vercel from "/images/logos/vercel.jpeg";
+import threejs from "/images/logos/three.png";
+import shell from "/images/logos/shell.png";
+import postgresql from "/images/logos/postgres.png";
+import mysql from "/images/logos/mysql.png";
+import jira from "/images/logos/jira.png";
+import zustand from "/images/logos/zustand.png";
+import gsap from "/images/logos/gsap.png";
+import supabase from "/images/logos/supabase.png";
+import java from "/images/logos/java.png";
+import spring from "/images/logos/spring.png";
+import junit from "/images/logos/junit.png";
 
 const navLinks = [
   {
@@ -18,12 +61,12 @@ const navLinks = [
     link: "work",
   },
   {
-    name: "Experience",
-    link: "experience",
-  },
-  {
     name: "Skills",
     link: "skills",
+  },
+  {
+    name: "Experience",
+    link: "experience",
   },
   {
     name: "Testimonials",
@@ -49,42 +92,6 @@ const counterItems: CounterItem[] = [
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
-const logoIconsList: LogoIcons[] = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
-];
-
 const abilities: Ability[] = [
   {
     imgPath: "/images/seo.png",
@@ -103,59 +110,148 @@ const abilities: Ability[] = [
   },
 ];
 
-const techStackImgs: TechImages[] = [
+const skills: TechStack[] = [
   {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
-
-const techStackIcons: TechIcons[] = [
-  {
-    name: "React Developer",
+    name: "React.js",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
+    name: "Node.js",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
-    rotation: [0, 0, 0],
+    name: "Express.js",
+    imgPath: "/images/logos/express.png",
   },
   {
-    name: "Project Manager",
+    name: "MongoDB",
+    imgPath: "/images/logos/mongodb.png",
+  },
+  {
+    name: "Git & Github",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
+  },
+];
+
+const technologies: LogoIcons[] = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Next.jS",
+    icon: nextjs,
+  },
+  {
+    name: "Jest",
+    icon: jest,
+  },
+  {
+    name: "Redux(RTK)",
+    icon: redux,
+  },
+  {
+    name: "Zustand",
+    icon: zustand,
+  },
+  {
+    name: "Sass",
+    icon: sass,
+  },
+  {
+    name: "TailwindCSS",
+    icon: tailwind,
+  },
+
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
+  },
+  {
+    name: "Appwrite",
+    icon: appwrite,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Bash_Script",
+    icon: shell,
+  },
+  {
+    name: "GitHub Actions",
+    icon: gitactions,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Vercel",
+    icon: vercel,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "SpringBoot",
+    icon: spring,
+  },
+  {
+    name: "JUnit-5",
+    icon: junit,
+  },
+  {
+    name: "GSAP",
+    icon: gsap,
+  },
+  {
+    name: "Three.js",
+    icon: threejs,
+  },
+  {
+    name: "VSCode",
+    icon: vscode,
+  },
+  {
+    name: "Jira",
+    icon: jira,
+  },
+  {
+    name: "Figma",
+    icon: figma,
   },
 ];
 
@@ -200,21 +296,6 @@ const expCards: Experience[] = [
       "Strengthened security by implementing JWT-based authentication and cookie-based access control, reducing unauthorized access incidents.",
       "Reduced system failures by 35% with automated unit testing with Jest, ensuring data integrity.",
     ],
-  },
-];
-
-const expLogos = [
-  {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
-  },
-  {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
   },
 ];
 
@@ -294,16 +375,439 @@ const socialContact: SocialContact[] = [
   },
 ];
 
+const projects = [
+  // {
+  //   name: "Jafel Project",
+  //   description:
+  //     "A Project Management app designed for creating, scheduling, assigning, tracking, and reporting tasks and projects. It helps to ensure project completion within budget and on time by providing tools for planning, resource allocation, and progress monitoring.",
+  //   tags: [
+  //     {
+  //       name: "Next.js",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "typescript",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux-toolkit",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "recharts",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "react-dnd",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "node.js",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "postgresql",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "prisma",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "aws",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: jafel,
+  //   source_code_link: "https://github.com/JacceyCode/jira_app",
+  //   live_demo: "https://main.d2mefg2mgkp7t4.amplifyapp.com",
+  // },
+  {
+    name: "CarePlus+",
+    description:
+      "A healthcare self-management system that allows users to schedule medical appointments. It addresses issues like long wait times, avoid scheduling conflicts, and eliminate the need for rescheduling due to physician unavailability.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sentry",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "twilio",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: careplus,
+    source_code_link: "https://github.com/JacceyCode/careplus",
+    live_demo: "https://care-plus-pi.vercel.app",
+  },
+  {
+    name: "OneClick Finance",
+    description:
+      "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "chartjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "plaid",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dwolla",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sentry",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bank,
+    source_code_link: "https://github.com/JacceyCode/finance",
+    live_demo: "https://bank-on-the-go.vercel.app",
+  },
+  {
+    name: "Apple iPhone 15 Pro",
+    description:
+      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
+    tags: [
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react_three_fiber",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sentry",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: apple,
+    source_code_link: "https://github.com/JacceyCode/apple",
+    live_demo: "https://apple-motion-page.vercel.app",
+  },
+  // {
+  //   name: "SeronEstate App",
+  //   description:
+  //     "An estate management app that allows for sale, purchase or rent of apartments with a chat feature for easy communication among users.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "typescript",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "zustand",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "sass",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "leaflet map",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "cloudinary",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "prisma",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "jwtoken",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "socket-io",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: seron,
+  //   source_code_link: "https://github.com/JacceyCode/estate-app",
+  //   live_demo: "https://seron-estate-app.vercel.app",
+  // },
+  // {
+  //   name: "Oasis",
+  //   description:
+  //     "An app developed for tourist's to book cabin accommodation of their choice before a scheduled visit to the tourist centre.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "nextauth",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: oasisclt,
+  //   source_code_link:
+  //     "https://github.com/JacceyCode/the-wild-aosis-client-website",
+  //   live_demo: "https://the-wild-aosis-client-website.vercel.app",
+  // },
+  // {
+  //   name: "E-Blog App",
+  //   description:
+  //     "A platform enabling writers to publish creative works for avid readers to engage with and provide valuable feedback.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "jwtoken",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: blog,
+  //   source_code_link: "https://github.com/JacceyCode/blog-site",
+  //   live_demo: "https://jacceyblog.netlify.app",
+  // },
+  {
+    name: "D-MarketPlace",
+    description:
+      "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
+    tags: [
+      {
+        name: "react",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+    ],
+    image: dmarketplace,
+    source_code_link: "https://github.com/JacceyCode/themarketplace",
+    live_demo: "https://dmarketplace.netlify.app",
+  },
+  {
+    name: "Natours",
+    description:
+      "A travel application designed and deployed to enthrall travel enthusiasts by showcasing different tourist attractions, facilitating exploration, reservation, and secure payments.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pug",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jwtoken",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: natours,
+    source_code_link: "https://github.com/JacceyCode/Natours",
+    live_demo: "https://mynatours-3ltq.onrender.com",
+  },
+  // {
+  //   name: "Oasis Management App",
+  //   description:
+  //     "An app developed for a resort to strategically prioritize customer management and reservations. With a glance on the app's dashboard, every customer's details and preferences can be gotten at the click of a finger.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "styled_components",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "recharts",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: oasismgt,
+  //   source_code_link: "https://github.com/JacceyCode/the-wild-oasis",
+  //   live_demo: "https://the-wild-oasis-vacation-house.netlify.app",
+  // },
+  {
+    name: "MovieBox",
+    description:
+      "A website built for movie lover's to checkout the latest movie trends, see reviews and have a sneak peek of the trailer before hitting the cinema.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tmdb_api",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: moviebox,
+    source_code_link: "https://github.com/JacceyCode/HNGxStage2Task",
+    live_demo: "https://mymoviestreambox.netlify.app",
+  },
+  // {
+  //   name: "Pizza Hub",
+  //   description:
+  //     "A website built for pizza lover's, providing a seamless ordering, delivery management and payment experience from the comfort of their homes. This helps to increase the pizza order rate per hour and improve the sales number at least by 40% for the company.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: pizza,
+  //   source_code_link: "https://github.com/JacceyCode/fast-react-pizza",
+  //   live_demo: "https://orderfastpizza.netlify.app",
+  // },
+];
+
 export {
   abilities,
   counterItems,
   expCards,
-  expLogos,
-  logoIconsList,
   navLinks,
   socialContact,
-  techStackIcons,
-  techStackImgs,
   testimonials,
   words,
+  projects,
+  skills,
+  technologies,
 };
