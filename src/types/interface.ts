@@ -83,3 +83,12 @@ export interface SocialContact {
   iconColor: string;
   animation: string;
 }
+
+export interface Project {
+  name: string;
+  description: string;
+  tags: string[];
+  image: string;
+  source_code_link: string;
+  live_demo: string;
+}
