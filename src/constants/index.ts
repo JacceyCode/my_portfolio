@@ -333,6 +333,27 @@ const socialContact: SocialContact[] = [
 
 const projects: Project[] = [
   {
+    name: "TourPlan",
+    description:
+      "Plan your choice destination trip with ease using TourPlan. A modern, trip planning application needed for a memorable experience.",
+    tags: [
+      "React.js",
+      "Vite",
+      "Tailwindcss",
+      "Typescript",
+      "React Router 7",
+      "SyncFusion",
+      "Appwrite",
+      "Sentry",
+      "Stripe",
+      "Vercel",
+      "Docker",
+    ],
+    image: "/images/tour-plan.png",
+    source_code_link: "https://github.com/JacceyCode/trip-planner",
+    live_demo: "https://my-tour-planner-three.vercel.app",
+  },
+  {
     name: "OneSchool",
     description:
       "A learning management platform that supports structured, collaborative learning. Empowers educators to manage courses and helps learners track their progress.",
