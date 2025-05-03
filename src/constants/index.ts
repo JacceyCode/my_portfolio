@@ -335,8 +335,9 @@ const projects: Project[] = [
   {
     name: "TourPlan",
     description:
-      "Plan your choice destination trip with ease using TourPlan. A modern, trip planning application needed for a memorable experience.",
+      "✨ TourPlan is your intelligent travel companion, powered by generative AI to help you craft the perfect trip effortlessly. Plan Smart. Travel Better. Welcome to TourPlan.",
     tags: [
+      "Google Generative AI",
       "React.js",
       "Vite",
       "Tailwindcss",
@@ -347,7 +348,6 @@ const projects: Project[] = [
       "Sentry",
       "Stripe",
       "Vercel",
-      "Docker",
     ],
     image: "/images/tour-plan.png",
     source_code_link: "https://github.com/JacceyCode/trip-planner",
