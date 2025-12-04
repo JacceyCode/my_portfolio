@@ -369,9 +369,9 @@ const projects: Project[] = [
       "Stripe",
       "Vercel",
     ],
-    image: "/images/tour-plan.png",
-    source_code_link: "https://github.com/JacceyCode/trip-planner",
-    live_demo: "https://my-tour-planner-three.vercel.app",
+    image: "/images/stocks.png",
+    source_code_link: "https://github.com/JacceyCode/stocks",
+    live_demo: "https://stock-market-insight.vercel.app",
   },
   {
     name: "CarePlus+",
