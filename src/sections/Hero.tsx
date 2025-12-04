@@ -59,11 +59,9 @@ const Hero = () => {
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none md:w-1/2">
               Hi 👋, I'm Jacob, a{" "}
-              <span className="text-amber-400">software developer</span> with{" "}
-              <span className="bg-blue-600 text-white-50 rounded-md px-1 italic">
-                technology
-              </span>{" "}
-              as my toolkit but solving problem is my real{" "}
+              <span className="text-amber-400">Software Engineer</span> with{" "}
+              <span className="italic">technology</span> as my toolkit but
+              solving problem is my real{" "}
               <b className="text-amber-400">superpower</b> 💪.
             </p>
 

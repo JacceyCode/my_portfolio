@@ -52,7 +52,7 @@ const NavBar = () => {
 
         <div className="flex flex-col md:flex-row items-end md:items-center gap-3">
           <a
-            href="https://drive.google.com/file/d/1LMdj_fEhIw-LlWvKZyDRBqHAX5dSOnfu/view?usp=sharing"
+            href="https://drive.google.com/file/d/1L7vNVp0OzBoqUM-MqFc4f8rVhEcPpogG/view?usp=sharing"
             target="_blank"
             className="contact-btn group"
           >
