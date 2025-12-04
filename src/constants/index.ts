@@ -234,9 +234,8 @@ const expCards: Experience[] = [
     title: "Full Stack Developer",
     date: "January 2024 - October 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Built and deployed company's landing page",
+      "Contributed to developing company's MVP mobile app.",
     ],
   },
   {
@@ -333,7 +332,7 @@ const socialContact: SocialContact[] = [
 
 const projects: Project[] = [
   {
-    name: "TourPlan",
+    name: "StockInsight",
     description:
       "✨ TourPlan is your intelligent travel companion, powered by generative AI to help you craft the perfect trip effortlessly. Plan Smart. Travel Better. Welcome to TourPlan.",
     tags: [
@@ -349,9 +348,101 @@ const projects: Project[] = [
       "Stripe",
       "Vercel",
     ],
+    image: "/images/stocks.png",
+    source_code_link: "https://github.com/JacceyCode/stocks",
+    live_demo: "https://stock-market-insight.vercel.app",
+  },
+  {
+    name: "TourPlan",
+    description:
+      "A dashboard that provides accurate, real-time tracking of multiple companies’ stocks and key market data at a glance, with integrated alerts on watchlist stocks for current updates and top stock market stories.",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Tailwindcss",
+      "ShadCN",
+      "Gemini API",
+      "Trading View Widget",
+      "MongoDB",
+      "Node mailer",
+      "Sentry",
+      "Vercel",
+    ],
     image: "/images/tour-plan.png",
     source_code_link: "https://github.com/JacceyCode/trip-planner",
     live_demo: "https://my-tour-planner-three.vercel.app",
+  },
+  {
+    name: "CarePlus+",
+    description:
+      "A healthcare self-management system that allows users to schedule medical appointments. It addresses issues like long wait times, avoid scheduling conflicts, and eliminate the need for rescheduling due to physician unavailability.",
+    tags: [
+      "Nextjs",
+      "Typescript",
+      "tailwindcss",
+      "Shadcn-ui",
+      "Appwrite",
+      "Sentry",
+      "Twilio",
+    ],
+    image: "/images/care-plus.png",
+    source_code_link: "https://github.com/JacceyCode/careplus",
+    live_demo: "https://care-plus-pi.vercel.app",
+  },
+  // {
+  //   name: "OneClick Finance",
+  //   description:
+  //     "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
+  //   tags: [
+  //     "Nextjs",
+  //     "Typescript",
+  //     "Tailwindcss",
+  //     "Shadcn-ui",
+  //     "Chartjs",
+  //     "Appwrite",
+  //     "Plaid",
+  //     "Dwolla",
+  //     "Sentry",
+  //   ],
+  //   image: "/images/bank.png",
+  //   source_code_link: "https://github.com/JacceyCode/finance",
+  //   live_demo: "https://bank-on-the-go.vercel.app",
+  // },
+  {
+    name: "Apple iPhone 15 Pro",
+    description:
+      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
+    tags: ["React.js", "Tailwindcss", "GSAP", "React_Three_Fiber", "Sentry"],
+    image: "/images/apple.png",
+    source_code_link: "https://github.com/JacceyCode/apple",
+    live_demo: "https://apple-motion-page.vercel.app",
+  },
+  // {
+  //   name: "D-MarketPlace",
+  //   description:
+  //     "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
+  //   tags: ["React.js", "Redux", "Tailwindcss", "Firebase", "Stripe"],
+  //   image: "/images/dmarketplace.webp",
+  //   source_code_link: "https://github.com/JacceyCode/themarketplace",
+  //   live_demo: "https://dmarketplace.netlify.app",
+  // },
+  {
+    name: "Natours",
+    description:
+      "A travel application designed and deployed to enthrall travel enthusiasts by showcasing different tourist attractions, facilitating exploration, reservation, and secure payments.",
+    tags: ["Nodejs", "Express.js", "MongoDB", "Pug", "JWT", "Stripe"],
+    image: "/images/natours.webp",
+    source_code_link: "https://github.com/JacceyCode/Natours",
+    live_demo: "https://mynatours-3ltq.onrender.com",
+  },
+  {
+    name: "MovieBox",
+    description:
+      "A website built for movie lover's to checkout the latest movie trends, see reviews and have a sneak peek of the trailer before hitting the cinema.",
+    tags: ["React.js", "Tailwindcss", "TMDB_API"],
+    image: "/images/moviebox.webp",
+    source_code_link: "https://github.com/JacceyCode/HNGxStage2Task",
+    live_demo: "https://mymoviestreambox.netlify.app",
   },
   {
     name: "OneSchool",
@@ -381,78 +472,6 @@ const projects: Project[] = [
     image: "/images/lms.png",
     source_code_link: "https://github.com/JacceyCode/lms",
     live_demo: "https://learning-management-system-blue.vercel.app/",
-  },
-  {
-    name: "CarePlus+",
-    description:
-      "A healthcare self-management system that allows users to schedule medical appointments. It addresses issues like long wait times, avoid scheduling conflicts, and eliminate the need for rescheduling due to physician unavailability.",
-    tags: [
-      "Nextjs",
-      "Typescript",
-      "tailwindcss",
-      "Shadcn-ui",
-      "Appwrite",
-      "Sentry",
-      "Twilio",
-    ],
-    image: "/images/care-plus.png",
-    source_code_link: "https://github.com/JacceyCode/careplus",
-    live_demo: "https://care-plus-pi.vercel.app",
-  },
-  {
-    name: "OneClick Finance",
-    description:
-      "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
-    tags: [
-      "Nextjs",
-      "Typescript",
-      "Tailwindcss",
-      "Shadcn-ui",
-      "Chartjs",
-      "Appwrite",
-      "Plaid",
-      "Dwolla",
-      "Sentry",
-    ],
-    image: "/images/bank.png",
-    source_code_link: "https://github.com/JacceyCode/finance",
-    live_demo: "https://bank-on-the-go.vercel.app",
-  },
-  {
-    name: "Apple iPhone 15 Pro",
-    description:
-      "Experience the cutting-edge innovation of the Apple iPhone 15 Pro with a stunning titanium frame and the most advanced A17 Bionic chip for unparalleled performance.",
-    tags: ["React.js", "Tailwindcss", "GSAP", "React_Three_Fiber", "Sentry"],
-    image: "/images/apple.png",
-    source_code_link: "https://github.com/JacceyCode/apple",
-    live_demo: "https://apple-motion-page.vercel.app",
-  },
-  {
-    name: "D-MarketPlace",
-    description:
-      "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
-    tags: ["React.js", "Redux", "Tailwindcss", "Firebase", "Stripe"],
-    image: "/images/dmarketplace.webp",
-    source_code_link: "https://github.com/JacceyCode/themarketplace",
-    live_demo: "https://dmarketplace.netlify.app",
-  },
-  {
-    name: "Natours",
-    description:
-      "A travel application designed and deployed to enthrall travel enthusiasts by showcasing different tourist attractions, facilitating exploration, reservation, and secure payments.",
-    tags: ["Nodejs", "Express.js", "MongoDB", "Pug", "JWT", "Stripe"],
-    image: "/images/natours.webp",
-    source_code_link: "https://github.com/JacceyCode/Natours",
-    live_demo: "https://mynatours-3ltq.onrender.com",
-  },
-  {
-    name: "MovieBox",
-    description:
-      "A website built for movie lover's to checkout the latest movie trends, see reviews and have a sneak peek of the trailer before hitting the cinema.",
-    tags: ["React.js", "Tailwindcss", "TMDB_API"],
-    image: "/images/moviebox.webp",
-    source_code_link: "https://github.com/JacceyCode/HNGxStage2Task",
-    live_demo: "https://mymoviestreambox.netlify.app",
   },
 ];
 
