@@ -418,15 +418,15 @@ const projects: Project[] = [
     source_code_link: "https://github.com/JacceyCode/apple",
     live_demo: "https://apple-motion-page.vercel.app",
   },
-  // {
-  //   name: "D-MarketPlace",
-  //   description:
-  //     "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
-  //   tags: ["React.js", "Redux", "Tailwindcss", "Firebase", "Stripe"],
-  //   image: "/images/dmarketplace.webp",
-  //   source_code_link: "https://github.com/JacceyCode/themarketplace",
-  //   live_demo: "https://dmarketplace.netlify.app",
-  // },
+  {
+    name: "D-MarketPlace",
+    description:
+      "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
+    tags: ["React.js", "Redux", "Tailwindcss", "Firebase", "Stripe"],
+    image: "/images/dmarketplace.webp",
+    source_code_link: "https://github.com/JacceyCode/themarketplace",
+    live_demo: "https://dmarketplace.netlify.app",
+  },
   {
     name: "Natours",
     description:
