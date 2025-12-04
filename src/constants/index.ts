@@ -334,6 +334,27 @@ const projects: Project[] = [
   {
     name: "StockInsight",
     description:
+      "A dashboard that provides accurate, real-time tracking of multiple companies’ stocks and key market data at a glance, with integrated alerts on watchlist stocks for current updates and top stock market stories.",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Tailwindcss",
+      "ShadCN",
+      "Gemini API",
+      "Trading View Widget",
+      "MongoDB",
+      "Node mailer",
+      "Sentry",
+      "Vercel",
+    ],
+
+    image: "/images/stocks.png",
+    source_code_link: "https://github.com/JacceyCode/stocks",
+    live_demo: "https://stock-market-insight.vercel.app",
+  },
+  {
+    name: "TourPlan",
+    description:
       "✨ TourPlan is your intelligent travel companion, powered by generative AI to help you craft the perfect trip effortlessly. Plan Smart. Travel Better. Welcome to TourPlan.",
     tags: [
       "Google Generative AI",
@@ -351,26 +372,6 @@ const projects: Project[] = [
     image: "/images/stocks.png",
     source_code_link: "https://github.com/JacceyCode/stocks",
     live_demo: "https://stock-market-insight.vercel.app",
-  },
-  {
-    name: "TourPlan",
-    description:
-      "A dashboard that provides accurate, real-time tracking of multiple companies’ stocks and key market data at a glance, with integrated alerts on watchlist stocks for current updates and top stock market stories.",
-    tags: [
-      "Next.js",
-      "Typescript",
-      "Tailwindcss",
-      "ShadCN",
-      "Gemini API",
-      "Trading View Widget",
-      "MongoDB",
-      "Node mailer",
-      "Sentry",
-      "Vercel",
-    ],
-    image: "/images/tour-plan.png",
-    source_code_link: "https://github.com/JacceyCode/trip-planner",
-    live_demo: "https://my-tour-planner-three.vercel.app",
   },
   {
     name: "CarePlus+",
