@@ -220,10 +220,11 @@ const expCards: Experience[] = [
     title: "Full Stack Engineer",
     date: "March 2024 - Present",
     responsibilities: [
-      "Developed a real-time asset price streaming feature for the user dashboard using Web Sockets, Redis and the Binance API, improving trade execution and monitoring speed.",
-      "Designed a trade signals tracking system to accurately calculate and reward users for earned profits, increasing transaction accuracy by 41%.",
-      "Boosted new registrations by 33% and increased active users by 74% by implementing a gamified task and reward system.",
-      "Implemented automated unit testing with Jest, reducing deployment bugs by 55% and improving system reliability.",
+      "Re-engineered the trade execution engine using AWS SQS and Lambda, increasing throughput to 2,500 orders per minute and maintaining 99.9% uptime at peak market sessions.",
+      "Designed a Redis Pub/Sub system to stream Binance API market data via WebSockets, maintaining sub-100ms latency for 1,000+ concurrent users.",
+      "Refactored core wallet services to enforce ACID-compliant transactions, reducing reconciliation errors and ensuring 100% data integrity for trade fee processing.",
+      "Developed an automated reward system that increased transaction calculation accuracy by 65%, directly improving user trust and platform transparency.",
+      "Migrated key services to serverless event-driven architecture using AWS Lambda and SQS, reducing infrastructure management overhead and improving deployment frequency.",
     ],
   },
   {
@@ -246,10 +247,10 @@ const expCards: Experience[] = [
     title: "Software Developer",
     date: "June 2022 - March 2024",
     responsibilities: [
-      "Increased revenue by 7% and traffic by 24% by deploying a new website optimized with search engine optimization (SEO) strategies and meta-tagging.",
-      "Enhanced API performance by 20% by optimizing query efficiency and database structuring in Node.js/Express.",
-      "Strengthened security by implementing JWT-based authentication and cookie-based access control, reducing unauthorized access incidents.",
-      "Reduced system failures by 35% with automated unit testing with Jest, ensuring data integrity.",
+      "Reduced average API response time by 20% through optimized SQL queries and strategic database indexes on high-traffic endpoints.",
+      "Implemented a secure authentication flow using OAuth2, JWT and secure HTTP-only cookies, mitigating XSS/CSRF risks for the investment platform.",
+      "Rebuilt the investor dashboard using Next.js, implementing SEO best practices and SSR, which resulted in a 2,000+ increase in monthly unique visitors.",
+      "Implemented automated CI/CD pipeline using Github Actions and Jest test suites achieving a 75% test coverage, which led to a 55% reduction in production bugs and accelerated the shipping cycle.",
     ],
   },
 ];
@@ -376,7 +377,7 @@ const projects: Project[] = [
   {
     name: "CarePlus+",
     description:
-      "A healthcare self-management system that allows users to schedule medical appointments. It addresses issues like long wait times, avoid scheduling conflicts, and eliminate the need for rescheduling due to physician unavailability.",
+      "A healthcare self-management SaaS platform using Appwrite and Twilio for digital appointment scheduling, focusing on high availability, HIPAA-compliant data handling and secure SMS notifications.",
     tags: [
       "Nextjs",
       "Typescript",
