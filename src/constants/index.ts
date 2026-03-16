@@ -234,9 +234,8 @@ const expCards: Experience[] = [
     title: "Full Stack Developer",
     date: "January 2024 - October 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Built and deployed company's landing page",
+      "Contributed to developing company's MVP mobile app.",
     ],
   },
   {
@@ -333,6 +332,27 @@ const socialContact: SocialContact[] = [
 
 const projects: Project[] = [
   {
+    name: "StockInsight",
+    description:
+      "A dashboard that provides accurate, real-time tracking of multiple companies’ stocks and key market data at a glance, with integrated alerts on watchlist stocks for current updates and top stock market stories.",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "Tailwindcss",
+      "ShadCN",
+      "Gemini API",
+      "Trading View Widget",
+      "MongoDB",
+      "Node mailer",
+      "Sentry",
+      "Vercel",
+    ],
+
+    image: "/images/stocks.png",
+    source_code_link: "https://github.com/JacceyCode/stocks",
+    live_demo: "https://stock-market-insight.vercel.app",
+  },
+  {
     name: "TourPlan",
     description:
       "✨ TourPlan is your intelligent travel companion, powered by generative AI to help you craft the perfect trip effortlessly. Plan Smart. Travel Better. Welcome to TourPlan.",
@@ -354,35 +374,6 @@ const projects: Project[] = [
     live_demo: "https://my-tour-planner-three.vercel.app",
   },
   {
-    name: "OneSchool",
-    description:
-      "A learning management platform that supports structured, collaborative learning. Empowers educators to manage courses and helps learners track their progress.",
-    tags: [
-      "Next.js",
-      "Redux RTK",
-      "Tailwindcss",
-      "Typescript",
-      "Shadcn-ui",
-      "Zod",
-      "Framer Motion",
-      "Clerk Auth",
-      "Node.js",
-      "Express.js",
-      "Stripe",
-      "Vercel",
-      "Docker",
-      "AWS Api Gateway",
-      "AWS Lambda",
-      "AWS DynamoDB",
-      "AWS S3",
-      "AWS ECR",
-      "AWS Cloudfront",
-    ],
-    image: "/images/lms.png",
-    source_code_link: "https://github.com/JacceyCode/lms",
-    live_demo: "https://learning-management-system-blue.vercel.app/",
-  },
-  {
     name: "CarePlus+",
     description:
       "A healthcare self-management system that allows users to schedule medical appointments. It addresses issues like long wait times, avoid scheduling conflicts, and eliminate the need for rescheduling due to physician unavailability.",
@@ -399,25 +390,25 @@ const projects: Project[] = [
     source_code_link: "https://github.com/JacceyCode/careplus",
     live_demo: "https://care-plus-pi.vercel.app",
   },
-  {
-    name: "OneClick Finance",
-    description:
-      "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
-    tags: [
-      "Nextjs",
-      "Typescript",
-      "Tailwindcss",
-      "Shadcn-ui",
-      "Chartjs",
-      "Appwrite",
-      "Plaid",
-      "Dwolla",
-      "Sentry",
-    ],
-    image: "/images/bank.png",
-    source_code_link: "https://github.com/JacceyCode/finance",
-    live_demo: "https://bank-on-the-go.vercel.app",
-  },
+  // {
+  //   name: "OneClick Finance",
+  //   description:
+  //     "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
+  //   tags: [
+  //     "Nextjs",
+  //     "Typescript",
+  //     "Tailwindcss",
+  //     "Shadcn-ui",
+  //     "Chartjs",
+  //     "Appwrite",
+  //     "Plaid",
+  //     "Dwolla",
+  //     "Sentry",
+  //   ],
+  //   image: "/images/bank.png",
+  //   source_code_link: "https://github.com/JacceyCode/finance",
+  //   live_demo: "https://bank-on-the-go.vercel.app",
+  // },
   {
     name: "Apple iPhone 15 Pro",
     description:
@@ -453,6 +444,35 @@ const projects: Project[] = [
     image: "/images/moviebox.webp",
     source_code_link: "https://github.com/JacceyCode/HNGxStage2Task",
     live_demo: "https://mymoviestreambox.netlify.app",
+  },
+  {
+    name: "OneSchool",
+    description:
+      "A learning management platform that supports structured, collaborative learning. Empowers educators to manage courses and helps learners track their progress.",
+    tags: [
+      "Next.js",
+      "Redux RTK",
+      "Tailwindcss",
+      "Typescript",
+      "Shadcn-ui",
+      "Zod",
+      "Framer Motion",
+      "Clerk Auth",
+      "Node.js",
+      "Express.js",
+      "Stripe",
+      "Vercel",
+      "Docker",
+      "AWS Api Gateway",
+      "AWS Lambda",
+      "AWS DynamoDB",
+      "AWS S3",
+      "AWS ECR",
+      "AWS Cloudfront",
+    ],
+    image: "/images/lms.png",
+    source_code_link: "https://github.com/JacceyCode/lms",
+    live_demo: "https://learning-management-system-blue.vercel.app/",
   },
 ];
 
